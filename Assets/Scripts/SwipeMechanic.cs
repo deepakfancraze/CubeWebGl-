@@ -18,6 +18,9 @@ public class SwipeMechanic : MonoBehaviour
 
     Vector2 mouseEndPos;
     [SerializeField] [Range(0, 1)] float sensitivity;
+    public static VideoPlay videoPlay;
+    public static VideoPause videoPause;
+
 
     void Update()
     {
@@ -29,6 +32,11 @@ public class SwipeMechanic : MonoBehaviour
             {
                 rotateToScreen = false;
                 lastKnownPos = Input.mousePosition;
+                if (cube.eulerAngles.y > 0 && cube.eulerAngles.y < 10)
+                {
+                    ResumeVideo();
+                    Debug.Log("Cube Rotation value _________" + cube.localEulerAngles.y);
+                }
             }
         }
         else
@@ -36,6 +44,7 @@ public class SwipeMechanic : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 lastKnownPos = Input.mousePosition;
+                PauseVideo();
             }
             if (Input.GetMouseButton(0))
             {
@@ -61,7 +70,7 @@ public class SwipeMechanic : MonoBehaviour
                 Debug.Log("Off by angle: " + lerp_target);
                 rotateToScreen = true;
             }
-        }       
+        }
     }
 
 
@@ -79,6 +88,24 @@ public class SwipeMechanic : MonoBehaviour
             Debug.Log("Rotatig backwards");
             lerp = Vector3.Lerp(lerp, lerp_target, Time.deltaTime * lerpFactor);
             cube.eulerAngles = cube.eulerAngles - lerp;
+        }
+    }
+
+    public void PauseVideo()
+    {
+        Debug.LogWarning("video pause");
+        if (videoPause != null)
+        {
+            videoPause();
+        }
+    }
+
+    public void ResumeVideo()
+    {
+        Debug.LogWarning("video pause");
+        if (videoPlay != null)
+        {
+            videoPlay();
         }
     }
 }

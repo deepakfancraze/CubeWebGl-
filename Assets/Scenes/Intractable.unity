@@ -241,18 +241,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &145088293 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2237985056367872619, guid: 48c21979774fa684a8f9018f40f05136,
-    type: 3}
-  m_PrefabInstance: {fileID: 299811823237015248}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &184354162
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,20 +359,21 @@ MonoBehaviour:
     licensed product of International Cricket Council.",         "audio_enable":
     "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Sreesanth%20Audio.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2JXJWEA7EZ76HYUD/20211029/us-east-2/s3/aws4_request&X-Amz-Date=20211029T070407Z&X-Amz-Expires=604798&X-Amz-SignedHeaders=host&X-Amz-Signature=5cc556695e7b9d3003e8458d56162ee46c3ae4131c0e1d0ad64c9259df9e8f43",        
     "file_name": "Andrew Common"       }     }   ] }'
-  jsonToShowForSwiping: '{   "element1": {     "player_name": "Rashid Khan",    
-    "moment_length": "0:21",     "border_color": "#2778DB",     "rarity": "PLATINUM",    
-    "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/1-Rashid%20-%20Mono.jpg",    
-    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/1%20-%20Rashid%20Khan%20%281%29.mp4",    
-    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/1-Rashid%20-%20Thumbnail.jpg"  
-    },   "element2": {     "action_type": "WICKET",     "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Cube%20Background/Rare%20BG.png",    
-    "moment_date": "JUN 4, 2019",     "team_name": "AFG"   },   "element3": {    
-    "player_jersey": 19   },   "element4": {     "score": "SL 201/10(36.5) v AFG
-    152/10(32.4)",     "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/Booster%20PackClean.png"  
-    },   "element5": {     "federation_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Logo.png",    
-    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Afghanistan.png",    
+  jsonToShowForSwiping: ' {       "element1": {         "player_name": "Shaheen Afridi",        
+    "moment_length": "0:21",         "border_color": "#72D016",         "rarity":
+    "COMMON",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/35%20-%20Shaheen%20-%20Mono.jpg",        
+    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/35%20-%20Shaheen%20Afridi%20%281%29.mp4",        
+    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/35%20-%20Shaheen%20-%20THumb.jpg"      
+    },       "element2": {         "action_type": "WICKET",         "image_url":
+    "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Cube%20Background/Common%20BG.png",        
+    "moment_date": "JUN 12, 2019",         "team_name": "PAK"       },       "element3":
+    {         "player_jersey": 40       },       "element4": {         "score": "PAK
+    307/10(49.0) v AUS 266/10(45.4)",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/HotShotsClean.png"      
+    },       "element5": {         "federation_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Logo.png",        
+    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Pakistan.png",        
     "copyright_info": "2021 Faze Technologies Pvt. Ltd.\nOfficially licensed product
-    of the ICC",     "audio_enable": "FALSE",     "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",    
-    "file_name": "Rashid Khan"   } }'
+    of the ICC",         "audio_enable": "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
+    "file_name": "Shaheen Afridi"       }     }'
 --- !u!4 &184354164
 Transform:
   m_ObjectHideFlags: 0
@@ -1062,18 +1051,6 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
---- !u!114 &1874346562 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3321367876601761688, guid: 48c21979774fa684a8f9018f40f05136,
-    type: 3}
-  m_PrefabInstance: {fileID: 299811823237015248}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1895963308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,6 +1277,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 242682522, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216957937, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811822289346176, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c9b43322def31a4468bd5556906c1c52, type: 2}
     - target: {fileID: 299811822289346178, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
       propertyPath: lightobject.Array.data[0]
@@ -1334,6 +1324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MomentObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811822289346206, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 299811822289346207, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
@@ -1410,16 +1405,6 @@ PrefabInstance:
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 239170866}
-    - target: {fileID: 299811823312272128, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 299811823312272128, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 299811823557939537, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
       propertyPath: m_ProbeAnchor
@@ -1435,16 +1420,6 @@ PrefabInstance:
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 239170866}
-    - target: {fileID: 299811823700643418, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: team_a_score
-      value: 
-      objectReference: {fileID: 1874346562}
-    - target: {fileID: 299811823700643418, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: team_b_score
-      value: 
-      objectReference: {fileID: 145088293}
     - target: {fileID: 299811823789977685, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
       propertyPath: m_ProbeAnchor
@@ -1455,6 +1430,21 @@ PrefabInstance:
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 239170866}
+    - target: {fileID: 6205743733404997672, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_Looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205743733404997672, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_SkipOnDrop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205743733404997672, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
 --- !u!1 &1443509607003478110 stripped

@@ -37,9 +37,9 @@ public class VideoInfo : MonoBehaviour
     {
         //VideoScreenController.videoPlay += StartVideo;
         //VideoScreenController.videoStop += StopVideo;
-        AnimationTriggers.videoPlay += ResumeVideo;
         IntroAnimController.videoPlay += StartVideo;
-        AnimationTriggers.videoPause += PauseVideo;
+        SwipeMechanic.videoPlay += ResumeVideo;
+        SwipeMechanic.videoPause += PauseVideo;
         EventManager.Subscribe(EventManager.EventType.StateDecided, OnStateDecided);
     }
 
@@ -47,9 +47,9 @@ public class VideoInfo : MonoBehaviour
     {
         //VideoScreenController.videoPlay -= StartVideo;
         //VideoScreenController.videoStop -= StopVideo;
-        AnimationTriggers.videoPlay -= ResumeVideo;
         IntroAnimController.videoPlay -= StartVideo;
-        AnimationTriggers.videoPause -= PauseVideo;
+        SwipeMechanic.videoPlay -= ResumeVideo;
+        SwipeMechanic.videoPause -= PauseVideo;
         EventManager.Unsubscribe(EventManager.EventType.StateDecided, OnStateDecided);
 
     }
@@ -59,19 +59,22 @@ public class VideoInfo : MonoBehaviour
         state = (State)data;
     }
 
+    [ContextMenu("Play")]
     private void ResumeVideo()
     {
-            videoplayer.Play();
+        videoplayer.Play();
     }
     private void StartVideo()
     {
+        videoplayer.frame = 0;
         videoplayer.Play();
         StartCoroutine(WaitForVideoFirstFrame());
     }
 
     IEnumerator WaitForVideoFirstFrame()
     {
-        yield return new WaitUntil(() => videoplayer.isPlaying);
+        yield return new WaitForEndOfFrame();
+        yield return new WaitUntil(() => videoplayer.isPlaying );
 
         if (state == State.Interaction)
         {
@@ -89,7 +92,7 @@ public class VideoInfo : MonoBehaviour
 
     private void PauseVideo()
     {
-            videoplayer.Pause();
+        videoplayer.Pause();
     }
     private void StopVideo()
     {

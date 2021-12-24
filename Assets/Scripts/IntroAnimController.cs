@@ -104,6 +104,12 @@ public class IntroAnimController : MonoBehaviour
     void OnEverythingLoaded()
     {
         instance.currentAnimator.SetTrigger("startIntro");
+        //EventManager.Dispatch(EventManager.EventType.IntroAnimStarted, null);
+    }
+
+
+    public void IntroAnimationStarted()
+    {
         EventManager.Dispatch(EventManager.EventType.IntroAnimStarted, null);
     }
 
@@ -194,20 +200,20 @@ public class IntroAnimController : MonoBehaviour
 
     void PlayVideoRecording()
     {
-        if (StateController.GetState() != State.Interaction)
-        {
-            if (VideoRecorder.recordingState != RecordingState.ScreenshotRecording)
-            {
-                if (videoPlay != null)
-                {
-                    videoPlay();
-                }
-            }
-            else
-            {
-                StartCoroutine(SkipVideoPLayerOnScreenShots());
-            }
-        }
+        //if (StateController.GetState() != State.Interaction)
+        //{
+        //    if (VideoRecorder.recordingState != RecordingState.ScreenshotRecording)
+        //    {
+        //        if (videoPlay != null)
+        //        {
+        //            videoPlay();
+        //        }
+        //    }
+        //    else
+        //    {
+        //        StartCoroutine(SkipVideoPLayerOnScreenShots());
+        //    }
+        //}
 
     }
 

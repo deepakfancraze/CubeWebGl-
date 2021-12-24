@@ -319,13 +319,13 @@ public class CubeDataController : MonoBehaviour
 
         LightingController.SetLighting(GetCubeRarityType(element1.rarity));
 
-        AudioLoader.GetAudio(AudioRecieved, element5.audio_enable, element5.audio_url);
+        //AudioLoader.GetAudio(AudioRecieved, element5.audio_enable, element5.audio_url);
 
     }
 
     public void AudioRecieved()
     {
-        IncreaseElementCountAndCheckIfAllDownloaded();
+        //IncreaseElementCountAndCheckIfAllDownloaded();
     }
 
     public void convertJsonToData(string jsonString)
@@ -378,6 +378,11 @@ public class CubeDataController : MonoBehaviour
                 //Debug.Log("play, 2");
             }
         }
+        else
+        {
+            ////momentVideoPlayer.frame = 0;
+            //momentVideoPlayer.Stop();
+        }
       
     }
 
@@ -429,7 +434,7 @@ public class CubeDataController : MonoBehaviour
     {
         alreadyDownloadedElementCount += 1;
 
-        if (alreadyDownloadedElementCount == 5)
+        if (alreadyDownloadedElementCount == 4)
         //if (alreadyDownloadedElementCount == 3)
         {
             //setDefaultAnimationBeforeStart?.Invoke();
