@@ -359,21 +359,21 @@ MonoBehaviour:
     licensed product of International Cricket Council.",         "audio_enable":
     "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Sreesanth%20Audio.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2JXJWEA7EZ76HYUD/20211029/us-east-2/s3/aws4_request&X-Amz-Date=20211029T070407Z&X-Amz-Expires=604798&X-Amz-SignedHeaders=host&X-Amz-Signature=5cc556695e7b9d3003e8458d56162ee46c3ae4131c0e1d0ad64c9259df9e8f43",        
     "file_name": "Andrew Common"       }     }   ] }'
-  jsonToShowForSwiping: ' {       "element1": {         "player_name": "Shaheen Afridi",        
-    "moment_length": "0:21",         "border_color": "#72D016",         "rarity":
-    "COMMON",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/35%20-%20Shaheen%20-%20Mono.jpg",        
-    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/35%20-%20Shaheen%20Afridi%20%281%29.mp4",        
-    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/35%20-%20Shaheen%20-%20THumb.jpg"      
-    },       "element2": {         "action_type": "WICKET",         "image_url":
-    "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Cube%20Background/Common%20BG.png",        
-    "moment_date": "JUN 12, 2019",         "team_name": "PAK"       },       "element3":
-    {         "player_jersey": 40       },       "element4": {         "score": "PAK
-    307/10(49.0) v AUS 266/10(45.4)",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/HotShotsClean.png"      
-    },       "element5": {         "federation_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Logo.png",        
-    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Pakistan.png",        
-    "copyright_info": "2021 Faze Technologies Pvt. Ltd.\nOfficially licensed product
-    of the ICC",         "audio_enable": "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
-    "file_name": "Shaheen Afridi"       }     }'
+  jsonToShowForSwiping: '{   "element1": {     "player_name": "Yuvraj Singh",    
+    "moment_length": "0:11",     "border_color": "#25AAF7",     "rarity": "EPIC",    
+    "image_url": "https://prod-asset.faze.app/Monochrome%20Images/Yuvraj.jpg",    
+    "video_url": "https://homepagecontent.s3.amazonaws.com/video/Yuvraj%206%20Sixes.mp4",    
+    "video_thumbnail": "https://prod-asset.faze.app/Video%20Thumbnail/Yuvraj.jpg"  
+    },   "element2": {     "action_type": "SIX",     "image_url": "https://prod-asset.faze.app/Surface%203%20Background/SquareBGPlatinumRev1.png",    
+    "moment_date": "SEPT 19, 2007",     "team_name": "IND"   },   "element3": {    
+    "player_jersey": 12   },   "element4": {     "score": "Ind 218/4(20) v Eng 200/6(20)",    
+    "image_url": "https://prod-asset.faze.app/Packs/GamechangerV1NoLabel.png"   },  
+    "element5": {     "federation_image_url": "https://prod-asset.faze.app/ICC%20Logo",    
+    "flag_image_url": "https://prod-asset.faze.app/Flags/India.png",     "copyright_info":
+    "2021 Faze Technologies Inc.\nAll Rights Reserved.\nOfficially licensed product
+    of International Cricket Council.",     "audio_enable": "TRUE",     "audio_url":
+    "https://prod-asset.faze.app/Sreesanth%20Audio.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2JXJWEA7EZ76HYUD/20211029/us-east-2/s3/aws4_request&X-Amz-Date=20211029T070407Z&X-Amz-Expires=604798&X-Amz-SignedHeaders=host&X-Amz-Signature=5cc556695e7b9d3003e8458d56162ee46c3ae4131c0e1d0ad64c9259df9e8f43",    
+    "file_name": "Yuvraj Platinum"   } }'
 --- !u!4 &184354164
 Transform:
   m_ObjectHideFlags: 0
@@ -1277,19 +1277,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 242682522, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216957937, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 299811822289346176, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: c9b43322def31a4468bd5556906c1c52, type: 2}
     - target: {fileID: 299811822289346178, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
       propertyPath: lightobject.Array.data[0]
@@ -1324,11 +1311,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MomentObjects
-      objectReference: {fileID: 0}
-    - target: {fileID: 299811822289346206, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 299811822289346207, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
@@ -1430,21 +1412,6 @@ PrefabInstance:
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 239170866}
-    - target: {fileID: 6205743733404997672, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_Looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6205743733404997672, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_SkipOnDrop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6205743733404997672, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_WaitForFirstFrame
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
 --- !u!1 &1443509607003478110 stripped
