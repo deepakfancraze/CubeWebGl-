@@ -103,7 +103,9 @@ public class IntroAnimController : MonoBehaviour
 
     void OnEverythingLoaded()
     {
-        instance.currentAnimator.SetTrigger("startIntro");
+        StartCoroutine(ShowIConAtStarting());
+
+        // instance.currentAnimator.SetTrigger("startIntro");
         //EventManager.Dispatch(EventManager.EventType.IntroAnimStarted, null);
     }
 
@@ -141,7 +143,12 @@ public class IntroAnimController : MonoBehaviour
             instance.currentAnimator.SetTrigger("Interactive");
         }
     }
-
+ IEnumerator ShowIConAtStarting()
+    {
+        Debug.LogError("Wating for sec___________");
+        yield return new WaitForSeconds(5);
+        instance.currentAnimator.SetTrigger("startIntro");
+    }
 
     public void PlayVideoAutoMode()
     {
