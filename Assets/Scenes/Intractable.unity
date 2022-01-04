@@ -364,11 +364,12 @@ MonoBehaviour:
     "image_url": "https://prod-asset.faze.app/Monochrome%20Images/Yuvraj.jpg",    
     "video_url": "https://homepagecontent.s3.amazonaws.com/video/Yuvraj%206%20Sixes.mp4",    
     "video_thumbnail": "https://prod-asset.faze.app/Video%20Thumbnail/Yuvraj.jpg"  
-    },   "element2": {     "action_type": "SIX",     "image_url": "https://prod-asset.faze.app/Surface%203%20Background/SquareBGPlatinumRev1.png",    
+    },   "element2": {     "action_type": "SIX",     "image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/Group+2.png",    
     "moment_date": "SEPT 19, 2007",     "team_name": "IND"   },   "element3": {    
-    "player_jersey": 12   },   "element4": {     "score": "Ind 218/4(20) v Eng 200/6(20)",    
-    "image_url": "https://prod-asset.faze.app/Packs/GamechangerV1NoLabel.png"   },  
-    "element5": {     "federation_image_url": "https://prod-asset.faze.app/ICC%20Logo",    
+    "player_jersey": 12,     "surfaceFour": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/Colour+on+White.png"  
+    },   "element4": {     "score": "Ind 218/4(20) v Eng 200/6(20)",     "image_url":
+    "https://prod-asset.faze.app/Packs/GamechangerV1NoLabel.png"   },   "element5":
+    {     "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/ICC_Crictos_Logo_Rev_RGB+2.png",    
     "flag_image_url": "https://prod-asset.faze.app/Flags/India.png",     "copyright_info":
     "2021 Faze Technologies Inc.\nAll Rights Reserved.\nOfficially licensed product
     of International Cricket Council.",     "audio_enable": "TRUE",     "audio_url":

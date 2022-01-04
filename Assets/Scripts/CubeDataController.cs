@@ -54,6 +54,8 @@ public class CubeDataController : MonoBehaviour
     [SerializeField] MeshRenderer ballBG_renderer;
     [SerializeField] MeshRenderer videoThumbnail;
     [SerializeField] SpriteRenderer teamLogoImage_renderer;
+    [SerializeField] SpriteRenderer surfaceFour_renderer;
+
     [SerializeField] SpriteRenderer assosiationLogoImage_renderer;
     [SerializeField] SpriteRenderer companyLogoImage_renderer;
     [SerializeField] TextMeshPro copyrightText;
@@ -302,6 +304,8 @@ public class CubeDataController : MonoBehaviour
         ImageLoader.GetTexture2D(TextureArrived, element4.image_url);
 
         ImageLoader.GetTexture2D(VideoBackgroundImageArrived, element2.image_url);
+        ImageLoader.GetTexture2D(surfaceFourImageArrived, element3.surfaceFour);
+
         ImageLoader.GetTexture2D(ThumbnailImageArrived, element1.video_thumbnail);
 
         ImageLoader.GetTexture2D(MonoChromBackgroundArrived, element1.image_url);
@@ -397,6 +401,14 @@ public class CubeDataController : MonoBehaviour
         ballBG_renderer.material.mainTexture = texture2D;
         IncreaseElementCountAndCheckIfAllDownloaded();
     }
+
+     void surfaceFourImageArrived(Texture2D texture2D)
+    {
+        // surfaceFour_renderer.sprite = texture2D;
+        surfaceFour_renderer.sprite = Sprite.Create(texture2D, new Rect(0, 0, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f));
+
+        IncreaseElementCountAndCheckIfAllDownloaded();
+    }
     void ThumbnailImageArrived(Texture2D texture2D)
     {
         videoThumbnail.material.mainTexture = texture2D;
@@ -434,7 +446,7 @@ public class CubeDataController : MonoBehaviour
     {
         alreadyDownloadedElementCount += 1;
 
-        if (alreadyDownloadedElementCount == 4)
+        if (alreadyDownloadedElementCount == 5)
         //if (alreadyDownloadedElementCount == 3)
         {
             //setDefaultAnimationBeforeStart?.Invoke();
@@ -539,10 +551,13 @@ public class Element3
 {
     //numbered side
     public int player_jersey;
+    public string surfaceFour;
 
-    public Element3(int player_jersey)
+    public Element3(int player_jersey,string surfaceFour)
     {
         this.player_jersey = player_jersey;
+        this.surfaceFour = surfaceFour;
+
     }
 }
 
