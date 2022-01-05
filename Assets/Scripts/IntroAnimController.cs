@@ -145,8 +145,7 @@ public class IntroAnimController : MonoBehaviour
     }
  IEnumerator ShowIConAtStarting()
     {
-        Debug.LogError("Wating for sec___________");
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(1);
         instance.currentAnimator.SetTrigger("startIntro");
     }
 
