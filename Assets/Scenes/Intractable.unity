@@ -359,22 +359,22 @@ MonoBehaviour:
     licensed product of International Cricket Council.",         "audio_enable":
     "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Sreesanth%20Audio.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2JXJWEA7EZ76HYUD/20211029/us-east-2/s3/aws4_request&X-Amz-Date=20211029T070407Z&X-Amz-Expires=604798&X-Amz-SignedHeaders=host&X-Amz-Signature=5cc556695e7b9d3003e8458d56162ee46c3ae4131c0e1d0ad64c9259df9e8f43",        
     "file_name": "Andrew Common"       }     }   ] }'
-  jsonToShowForSwiping: '  {       "element1": {         "player_name": "Mustafizur
-    Rahman",         "moment_length": "0:21",         "border_color": "#006950",        
-    "rarity": "COMMON",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/13-Mustafizur%20-%20Mono.jpg",        
-    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/13-Mustafizur%20%281%29.mp4",        
-    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/13-Mustafizur%20-%20Thumb.jpg"      
+  jsonToShowForSwiping: ' {       "element1": {         "player_name": "Rashid Khan",        
+    "moment_length": "0:21",         "border_color": "#2778DB",         "rarity":
+    "RARE",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/1-Rashid%20-%20Mono.jpg",        
+    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/1%20-%20Rashid%20Khan%20%281%29.mp4",        
+    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/1-Rashid%20-%20Thumbnail.jpg"      
     },       "element2": {         "action_type": "WICKET",         "image_url":
-    "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Cube%20Background/Genesis%20BG.png",        
-    "moment_date": "JUN 2, 2019",         "team_name": "BAN"       },       "element3":
-    {         "player_jersey": 90,         "surfaceFour": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Genesis.png",        
+    "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Cube%20Background/Rare%20BG.png",        
+    "moment_date": "JUN 4, 2019",         "team_name": "AFG"       },       "element3":
+    {         "player_jersey": 19,         "surfaceFour": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Logo%20-%20Common%2CRare%2CEpic.png",        
     "tournamentName": "ENGLAND & WALES 2019"       },       "element4": {        
-    "score": "BAN 330/6(50.0) v SA 309/8(50.0)",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/GameChangersClean.png"      
-    },       "element5": {         "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/Common.png",        
-    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Bangladesh.png",        
+    "score": "SL 201/10(36.5) v AFG 152/10(32.4)",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/Booster%20PackClean.png"      
+    },       "element5": {         "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/Rare.png",        
+    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Afghanistan.png",        
     "copyright_info": "Officially licensed product of the ICC by FanCraze.",        
     "audio_enable": "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
-    "file_name": "Mustafizur Rahman"       }     }'
+    "file_name": "Rashid Khan"       }     }'
 --- !u!4 &184354164
 Transform:
   m_ObjectHideFlags: 0
@@ -1406,6 +1406,21 @@ PrefabInstance:
     - target: {fileID: 299811822289346207, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811822464216692, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811822464216692, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811822464216692, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 299811822930333481, guid: 48c21979774fa684a8f9018f40f05136,
