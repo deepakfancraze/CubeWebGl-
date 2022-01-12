@@ -359,21 +359,22 @@ MonoBehaviour:
     licensed product of International Cricket Council.",         "audio_enable":
     "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Sreesanth%20Audio.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2JXJWEA7EZ76HYUD/20211029/us-east-2/s3/aws4_request&X-Amz-Date=20211029T070407Z&X-Amz-Expires=604798&X-Amz-SignedHeaders=host&X-Amz-Signature=5cc556695e7b9d3003e8458d56162ee46c3ae4131c0e1d0ad64c9259df9e8f43",        
     "file_name": "Andrew Common"       }     }   ] }'
-  jsonToShowForSwiping: '{   "element1": {     "player_name": "Aaron Finch",    
-    "moment_length": "0:21",     "border_color": "#FFD500",     "rarity": "COMMON",    
-    "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/5-Aaronn%20-%20Mono.jpg",    
-    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/5-Aaron%20Finch%20%281%29.mp4",    
-    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/5-Aaronn%20-%20Thumb.jpg"  
-    },   "element2": {     "action_type": "SIX",     "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Cube%20Background/Common%20BG.png",    
-    "moment_date": "JUN 12, 2019",     "team_name": "AUS"   },   "element3": {    
-    "player_jersey": 5,     "surfaceFour": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/Colour+on+White.png"  
-    },   "element4": {     "score": "PAK 307/10(49.0) v AUS 266/10(45.4)",     "image_url":
-    "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/4%20New%20Packs/GameChangers.png"  
-    },   "element5": {     "federation_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Logo.png",    
-    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Australia.png",    
-    "copyright_info": "2021 Faze Technologies Pvt. Ltd.\nOfficially licensed product
-    of the ICC",     "audio_enable": "FALSE",     "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",    
-    "file_name": "Aaron Finch"   } }'
+  jsonToShowForSwiping: '  {       "element1": {         "player_name": "Mustafizur
+    Rahman",         "moment_length": "0:21",         "border_color": "#006950",        
+    "rarity": "COMMON",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/13-Mustafizur%20-%20Mono.jpg",        
+    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/13-Mustafizur%20%281%29.mp4",        
+    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/13-Mustafizur%20-%20Thumb.jpg"      
+    },       "element2": {         "action_type": "WICKET",         "image_url":
+    "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Cube%20Background/Genesis%20BG.png",        
+    "moment_date": "JUN 2, 2019",         "team_name": "BAN"       },       "element3":
+    {         "player_jersey": 90,         "surfaceFour": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Genesis.png",        
+    "tournamentName": "ENGLAND & WALES 2019"       },       "element4": {        
+    "score": "BAN 330/6(50.0) v SA 309/8(50.0)",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/GameChangersClean.png"      
+    },       "element5": {         "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/Common.png",        
+    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Bangladesh.png",        
+    "copyright_info": "Officially licensed product of the ICC by FanCraze.",        
+    "audio_enable": "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
+    "file_name": "Mustafizur Rahman"       }     }'
 --- !u!4 &184354164
 Transform:
   m_ObjectHideFlags: 0
@@ -1277,6 +1278,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 299811822163315838, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00994
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811822163315838, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.071
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811822163315838, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7072302
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811822163315838, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7069834
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811822163315838, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811822163315838, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811822163315838, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811822163315838, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 299811822289346178, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
       propertyPath: lightobject.Array.data[0]
@@ -1387,6 +1428,21 @@ PrefabInstance:
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 239170866}
+    - target: {fileID: 299811823312272128, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811823312272128, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 299811823312272128, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 299811823557939537, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
       propertyPath: m_ProbeAnchor
@@ -1412,6 +1468,61 @@ PrefabInstance:
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 239170866}
+    - target: {fileID: 2926017025862990955, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_text
+      value: ENGLAND & WALES 2019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926017025862990955, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926017025862990955, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926017025862990955, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926017025862990955, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585408236047396519, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583866626421539439, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.343
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205743732603550803, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205743732603550803, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205743732603550803, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6284713482500207838, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_text
+      value: ENGLAND & WALES 2019
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
 --- !u!1 &1443509607003478110 stripped

@@ -78,7 +78,17 @@ public class MaterialColourHandler : MonoBehaviour
         return Color.HSVToRGB(h, s, v);
     }
 
-    public static void SetColor(string borderColor, CubeRarityType rarity)
+    private static Color DarkShadeColor(Color inputColor, float darkenBy = 0.50f)
+    {
+        float h, s, v;
+        Color.RGBToHSV(inputColor, out h, out s, out v);
+        v = v - darkenBy;
+        //Debug.LogError(inputColor + "  Color set to :" + h + " ," + s + " ," + v);
+
+        return Color.HSVToRGB(h, s, v);
+    }
+    public static void SetColor(string borderColor, CubeRarityType rarity, SpriteRenderer surface4Logo, SpriteRenderer surface4ShadowRender, SpriteRenderer surface4LogoGradiant
+        , TextMeshPro tournamentName, TextMeshPro tournamentNameSadow)
     {
         if (ColorUtility.TryParseHtmlString(borderColor, out Color color))
         {
@@ -90,6 +100,12 @@ public class MaterialColourHandler : MonoBehaviour
                 case CubeRarityType.common:
                     {
 
+                        surface4Logo.color = color;
+                        surface4ShadowRender.color = DarkShadeColor(color);
+                        surface4LogoGradiant.gameObject.SetActive(true);
+                        tournamentName.color = color;
+                        tournamentNameSadow.color = DarkShadeColor(color);
+
                         instance.edgesMaterial.color = color;
                         instance.jerseyBotTextMat.SetColor("_FaceColor", color);
                         instance.jerseyBotTextMat.SetColor("_GlowColor", instance.ChangeBGColorGlow(color));
@@ -100,6 +116,11 @@ public class MaterialColourHandler : MonoBehaviour
                     break;
                 case CubeRarityType.rare:   
                     {
+                        surface4Logo.color = color;
+                        surface4ShadowRender.color = DarkShadeColor(color);
+                        surface4LogoGradiant.gameObject.SetActive(true);
+                        tournamentName.color = color;
+                        tournamentNameSadow.color = DarkShadeColor(color);
 
                         instance.edgesMaterial.color = color;
                         instance.rareBorderMat.SetColor("EmissionColor", color);
@@ -112,6 +133,11 @@ public class MaterialColourHandler : MonoBehaviour
                     break;
                 case CubeRarityType.epic:
                     {
+                        surface4Logo.color = color;
+                        surface4ShadowRender.color = DarkShadeColor(color);
+                        surface4LogoGradiant.gameObject.SetActive(true);
+                        tournamentName.color = color;
+                        tournamentNameSadow.color = DarkShadeColor(color);
                         Debug.Log("Set epic colors");
                         instance.edgesMaterial.color = color;
                         instance.epicBorderMat.SetColor("EmissionColor", color);
@@ -125,6 +151,11 @@ public class MaterialColourHandler : MonoBehaviour
                     break;
                 case CubeRarityType.legendary:
                     {
+                        tournamentName.color = instance.legendaryEdgeColor;
+
+                        surface4ShadowRender.color = DarkShadeColor(Color.white);
+                        tournamentNameSadow.color = DarkShadeColor(instance.legendaryEdgeColor);
+                        surface4Logo.color = Color.white;
                         instance.edgesMaterial.color = instance.legendaryEdgeColor;
                         instance.jerseyBotTextMat.SetColor("_FaceColor", instance.legendaryBGFaceColor);
                         instance.jerseyBotTextMat.SetColor("_GlowColor", instance.legendaryBGGlowColor);
@@ -135,6 +166,13 @@ public class MaterialColourHandler : MonoBehaviour
                     break;
                 case CubeRarityType.genesis:
                     {
+                        tournamentName.color = instance.genesisEdgeColor;
+
+                        instance.edgesMaterial.color = instance.genesisEdgeColor;
+                        surface4ShadowRender.color = DarkShadeColor(Color.white);
+                        tournamentNameSadow.color = DarkShadeColor(instance.genesisEdgeColor);
+                        surface4Logo.color = Color.white;
+
                         instance.edgesMaterial.color = instance.genesisEdgeColor;
                         instance.jerseyBotTextMat.SetColor("_FaceColor", instance.genesisBGFaceColor);
                         instance.jerseyBotTextMat.SetColor("_GlowColor", instance.genesisBGGlowColor);
@@ -146,6 +184,12 @@ public class MaterialColourHandler : MonoBehaviour
                 case CubeRarityType.platinum:
                     {
                         Debug.Log("Set plat colors");
+                        tournamentName.color = instance.platinumFaceColor;
+                        instance.edgesMaterial.color = instance.platinumFaceColor;
+                        surface4ShadowRender.color = DarkShadeColor(Color.white);
+                        tournamentNameSadow.color = DarkShadeColor(instance.platinumFaceColor);
+                        surface4Logo.color = Color.white;
+
                         instance.edgesMaterial.color = instance.platinumFaceColor;
                         instance.jerseyBotTextMat.SetColor("_FaceColor", instance.platinumFaceBGColor);
                         instance.jerseyBotTextMat.SetColor("_GlowColor", instance.platinumGlowBGColor);

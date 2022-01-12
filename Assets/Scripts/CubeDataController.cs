@@ -55,6 +55,10 @@ public class CubeDataController : MonoBehaviour
     [SerializeField] MeshRenderer videoThumbnail;
     [SerializeField] SpriteRenderer teamLogoImage_renderer;
     [SerializeField] SpriteRenderer surfaceFour_renderer;
+    [SerializeField] SpriteRenderer surfaceFourShadow_renderer;
+    [SerializeField] SpriteRenderer surfaceFour_renderer_Gradiant;
+    [SerializeField] TextMeshPro tournamentName;
+    [SerializeField] TextMeshPro tournnamentNameShadow;
 
     [SerializeField] SpriteRenderer assosiationLogoImage_renderer;
     [SerializeField] SpriteRenderer companyLogoImage_renderer;
@@ -81,6 +85,8 @@ public class CubeDataController : MonoBehaviour
     List<Surface> surfaces = new List<Surface>();
 
     bool alreadyPrepared = false;
+    internal bool isSurfaceFourImageDownloaded;
+
 
     private void Start()
     {
@@ -279,6 +285,8 @@ public class CubeDataController : MonoBehaviour
         copyrightText.text = element5.copyright_info;
         filename = element5.file_name;
 
+        tournamentName.text = element3.tournamentName;
+        tournnamentNameShadow.text = element3.tournamentName;
 
         if (momentVideoPlayer != null || momentVideoPlayer)
         {
@@ -305,6 +313,7 @@ public class CubeDataController : MonoBehaviour
 
         ImageLoader.GetTexture2D(VideoBackgroundImageArrived, element2.image_url);
         ImageLoader.GetTexture2D(surfaceFourImageArrived, element3.surfaceFour);
+        StartCoroutine(ChangeSurfaceFourColor(element1.border_color, GetCubeRarityType(element1.rarity)));
 
         ImageLoader.GetTexture2D(ThumbnailImageArrived, element1.video_thumbnail);
 
@@ -319,7 +328,7 @@ public class CubeDataController : MonoBehaviour
 
         BorderSetter.SetBorder(GetCubeRarityType(element1.rarity), element1.border_color);
 
-        MaterialColourHandler.SetColor(element1.border_color, GetCubeRarityType(element1.rarity));
+        //MaterialColourHandler.SetColor(element1.border_color, GetCubeRarityType(element1.rarity));
 
         LightingController.SetLighting(GetCubeRarityType(element1.rarity));
 
@@ -406,7 +415,16 @@ public class CubeDataController : MonoBehaviour
     {
         // surfaceFour_renderer.sprite = texture2D;
         surfaceFour_renderer.sprite = Sprite.Create(texture2D, new Rect(0, 0, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f));
+        surfaceFourShadow_renderer.sprite = Sprite.Create(texture2D, new Rect(0, 0, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f));
 
+        IncreaseElementCountAndCheckIfAllDownloaded();
+    }
+
+    IEnumerator ChangeSurfaceFourColor(string borderColor, CubeRarityType rarity)
+    {
+        yield return new WaitUntil(() => isSurfaceFourImageDownloaded);
+        surfaceFour_renderer_Gradiant.gameObject.SetActive(false);
+        MaterialColourHandler.SetColor(borderColor, rarity, surfaceFour_renderer, surfaceFourShadow_renderer, surfaceFour_renderer_Gradiant, tournamentName, tournnamentNameShadow);
         IncreaseElementCountAndCheckIfAllDownloaded();
     }
     void ThumbnailImageArrived(Texture2D texture2D)
@@ -552,11 +570,13 @@ public class Element3
     //numbered side
     public int player_jersey;
     public string surfaceFour;
+    public string tournamentName;
 
-    public Element3(int player_jersey,string surfaceFour)
+    public Element3(int player_jersey, string surfaceFour, string tournamentName)
     {
         this.player_jersey = player_jersey;
         this.surfaceFour = surfaceFour;
+        this.tournamentName = tournamentName;
 
     }
 }
