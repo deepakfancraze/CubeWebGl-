@@ -223,6 +223,7 @@ public class CubeDataController : MonoBehaviour
     void VisualiseSurface(Surface surface)
     {
         alreadyDownloadedElementCount = 0;
+        isSurfaceFourImageDownloaded = false;
 
         Element1 element1 = surface.element1;
         Element2 element2 = surface.element2;
@@ -312,6 +313,7 @@ public class CubeDataController : MonoBehaviour
         ImageLoader.GetTexture2D(TextureArrived, element4.image_url);
 
         ImageLoader.GetTexture2D(VideoBackgroundImageArrived, element2.image_url);
+
         ImageLoader.GetTexture2D(surfaceFourImageArrived, element3.surfaceFour);
         StartCoroutine(ChangeSurfaceFourColor(element1.border_color, GetCubeRarityType(element1.rarity)));
 
@@ -416,8 +418,8 @@ public class CubeDataController : MonoBehaviour
         // surfaceFour_renderer.sprite = texture2D;
         surfaceFour_renderer.sprite = Sprite.Create(texture2D, new Rect(0, 0, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f));
         surfaceFourShadow_renderer.sprite = Sprite.Create(texture2D, new Rect(0, 0, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f));
-
-        IncreaseElementCountAndCheckIfAllDownloaded();
+        isSurfaceFourImageDownloaded = true;
+        //IncreaseElementCountAndCheckIfAllDownloaded();
     }
 
     IEnumerator ChangeSurfaceFourColor(string borderColor, CubeRarityType rarity)
