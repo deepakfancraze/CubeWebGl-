@@ -29,7 +29,6 @@ public class VideoInfo : MonoBehaviour
     void Start()
     {
 
-        videoplayer.loopPointReached += CheckOver;
         //videoLength = (float)videoplayer.clip.length;
         //Debug.Log("Video Length: " + videoLength);
     }
@@ -37,9 +36,11 @@ public class VideoInfo : MonoBehaviour
     {
         //VideoScreenController.videoPlay += StartVideo;
         //VideoScreenController.videoStop += StopVideo;
+        //videoplayer.loopPointReached += CheckOver;
         IntroAnimController.videoPlay += StartVideo;
         SwipeMechanic.videoPlay += ResumeVideo;
         SwipeMechanic.videoPause += PauseVideo;
+
         EventManager.Subscribe(EventManager.EventType.StateDecided, OnStateDecided);
     }
 
@@ -50,6 +51,8 @@ public class VideoInfo : MonoBehaviour
         IntroAnimController.videoPlay -= StartVideo;
         SwipeMechanic.videoPlay -= ResumeVideo;
         SwipeMechanic.videoPause -= PauseVideo;
+        videoplayer.loopPointReached -= CheckOver;
+
         EventManager.Unsubscribe(EventManager.EventType.StateDecided, OnStateDecided);
 
     }

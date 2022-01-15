@@ -194,7 +194,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.11764706, g: 0.11764706, b: 0.11764706, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -272,109 +272,116 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataController: {fileID: 614639754}
   JsonForRecording: '{   "ClassName": [     {       "element1": {         "player_name":
-    "MS Dhoni",         "moment_length": "0:20",         "border_color": "#25AAF7",        
-    "rarity": "GENESIS",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Monochrome%20Images/Dhoni.jpeg",        
-    "video_url": "https://homepagecontent.s3.amazonaws.com/video/Dhoni%20Finishes%20off%20in%20style.mp4",        
-    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Video%20Thumbnail/MS%20Dhoni.jpg"      
-    },       "element2": {         "action_type": "SIX",         "image_url": "https://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Surface%203%20Background/SquareBGGenesisRev1.png",        
-    "moment_date": "APR 2, 2011",         "team_name": "IND"       },       "element3":
-    {         "player_jersey": 7       },       "element4": {         "score": "SL
-    274/6(50) v Ind 277/4(48.2)",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs/CosmicPackNoLabel.png"      
-    },       "element5": {         "federation_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/ICC%20Logo",        
-    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/India.png",        
-    "copyright_info": "2021 Faze Technologies Inc.\nAll Rights Reserved.\nOfficially
-    licensed product of International Cricket Council.",         "audio_enable":
-    "TRUE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Sreesanth%20Audio.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2JXJWEA7EZ76HYUD/20211029/us-east-2/s3/aws4_request&X-Amz-Date=20211029T070407Z&X-Amz-Expires=604798&X-Amz-SignedHeaders=host&X-Amz-Signature=5cc556695e7b9d3003e8458d56162ee46c3ae4131c0e1d0ad64c9259df9e8f43",        
-    "file_name": "Dhoni Genesis"       }     },     {       "element1": {        
-    "player_name": "Yuvraj Singh",         "moment_length": "0:11",         "border_color":
-    "#25AAF7",         "rarity": "PLATINUM",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Monochrome%20Images/Yuvraj.jpg",        
-    "video_url": "https://homepagecontent.s3.amazonaws.com/video/Yuvraj%206%20Sixes.mp4",        
-    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Video%20Thumbnail/Yuvraj.jpg"      
-    },       "element2": {         "action_type": "SIX",         "image_url": "https://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Surface%203%20Background/SquareBGPlatinumRev1.png",        
-    "moment_date": "SEPT 19, 2007",         "team_name": "IND"       },       "element3":
-    {         "player_jersey": 12       },       "element4": {         "score": "Ind
-    218/4(20) v Eng 200/6(20)",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs/GamechangerV1NoLabel.png"      
-    },       "element5": {         "federation_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/ICC%20Logo",        
-    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/India.png",        
-    "copyright_info": "2021 Faze Technologies Inc.\nAll Rights Reserved.\nOfficially
-    licensed product of International Cricket Council.",         "audio_enable":
-    "TRUE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Sreesanth%20Audio.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2JXJWEA7EZ76HYUD/20211029/us-east-2/s3/aws4_request&X-Amz-Date=20211029T070407Z&X-Amz-Expires=604798&X-Amz-SignedHeaders=host&X-Amz-Signature=5cc556695e7b9d3003e8458d56162ee46c3ae4131c0e1d0ad64c9259df9e8f43",        
-    "file_name": "Yuvraj Platinum"       }     },     {       "element1": {        
-    "player_name": "Imran Khan",         "moment_length": "0:11",         "border_color":
-    "#72D016",         "rarity": "LEGENDARY",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Monochrome%20Images/Imran.jpeg",        
-    "video_url": "https://homepagecontent.s3.amazonaws.com/video/Pak%20WC%20Win.mp4",        
-    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Video%20Thumbnail/Imran%20k.jpg"      
+    "Mustafizur Rahman",         "moment_length": "0:21",         "border_color":
+    "#006950",         "rarity": "COMMON",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/13-Mustafizur%20-%20Mono.jpg",        
+    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/13-Mustafizur%20%281%29.mp4",        
+    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/13-Mustafizur%20-%20Thumb.jpg"      
     },       "element2": {         "action_type": "WICKET",         "image_url":
-    "https://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Surface%203%20Background/SquareBGLegendaryRev2.png",        
-    "moment_date": "MAR 25, 1992",         "team_name": "PAK"       },       "element3":
-    {         "player_jersey": 28       },       "element4": {         "score": "Pak
-    249/6(50) v Eng 227/10(49.2)",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs/GamechangerV2NoLabel.png"      
-    },       "element5": {         "federation_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/ICC%20Logo",        
-    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Pakistan.png",        
-    "copyright_info": "2021 Faze Technologies Inc.\nAll Rights Reserved.\nOfficially
-    licensed product of International Cricket Council.",         "audio_enable":
-    "TRUE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Sreesanth%20Audio.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2JXJWEA7EZ76HYUD/20211029/us-east-2/s3/aws4_request&X-Amz-Date=20211029T070407Z&X-Amz-Expires=604798&X-Amz-SignedHeaders=host&X-Amz-Signature=5cc556695e7b9d3003e8458d56162ee46c3ae4131c0e1d0ad64c9259df9e8f43",        
-    "file_name": "Imran Legendary"       }     },     {       "element1": {        
-    "player_name": "Ben Stokes",         "moment_length": "0:08",         "border_color":
-    "#04064D",         "rarity": "EPIC",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Monochrome%20Images/Ben%20Stokes.jpg",        
-    "video_url": "https://homepagecontent.s3.amazonaws.com/video/Ben%20Stoakes%20Catch.mp4",        
-    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Video%20Thumbnail/Ben%20Stokes.jpg"      
-    },       "element2": {         "action_type": "CATCH",         "image_url": "https://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Surface%203%20Background/SquareBGEpicRev1.png",        
-    "moment_date": "MAY 30, 2019",         "team_name": "ENG"       },       "element3":
-    {         "player_jersey": 55       },       "element4": {         "score": "Eng
-    311/8(50) v SA 207/10(39.5)",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs/PremiumNoLabel.png"      
-    },       "element5": {         "federation_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/ICC%20Logo",        
-    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/England.png",        
-    "copyright_info": "2021 Faze Technologies Inc.\nAll Rights Reserved.\nOfficially
-    licensed product of International Cricket Council.",         "audio_enable":
-    "TRUE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Sreesanth%20Audio.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2JXJWEA7EZ76HYUD/20211029/us-east-2/s3/aws4_request&X-Amz-Date=20211029T070407Z&X-Amz-Expires=604798&X-Amz-SignedHeaders=host&X-Amz-Signature=5cc556695e7b9d3003e8458d56162ee46c3ae4131c0e1d0ad64c9259df9e8f43",        
-    "file_name": "Ben Epic"       }     },     {       "element1": {         "player_name":
-    "Muttiah Muralitharan",         "moment_length": "0:15",         "border_color":
-    "#1B2E96",         "rarity": "RARE",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Monochrome%20Images/Murali.jpg",        
-    "video_url": "https://homepagecontent.s3.amazonaws.com/video/Murli%20Wicket.mp4",        
-    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Video%20Thumbnail/Murali.jpg"      
-    },       "element2": {         "action_type": "WICKET",         "image_url":
-    "https://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Surface%203%20Background/Rare.png",        
-    "moment_date": "FEB 28, 2003",         "team_name": "SRI"       },       "element3":
-    {         "player_jersey": 8       },       "element4": {         "score": "SL
-    228/6(50) v WI 222/9(50)",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs/VintageV2NoLabel.png"      
-    },       "element5": {         "federation_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/ICC%20Logo",        
-    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Sri%20lanka.png",        
-    "copyright_info": "2021 Faze Technologies Inc.\nAll Rights Reserved.\nOfficially
-    licensed product of International Cricket Council.",         "audio_enable":
-    "TRUE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Sreesanth%20Audio.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2JXJWEA7EZ76HYUD/20211029/us-east-2/s3/aws4_request&X-Amz-Date=20211029T070407Z&X-Amz-Expires=604798&X-Amz-SignedHeaders=host&X-Amz-Signature=5cc556695e7b9d3003e8458d56162ee46c3ae4131c0e1d0ad64c9259df9e8f43",        
-    "file_name": "Muttiah Rare"       }     },     {       "element1": {        
-    "player_name": "Andrew Symonds",         "moment_length": "0:10",         "border_color":
-    "FFD500",         "rarity": "COMMON",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Monochrome%20Images/Andrew%20Symonds.jpg",        
-    "video_url": "https://homepagecontent.s3.amazonaws.com/video/Dhoni%20Finishes%20off%20in%20style.mp4",        
-    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Video%20Thumbnail/Andrew%20Symonds.jpg"      
-    },       "element2": {         "action_type": "WICKET",         "image_url":
-    "https://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Surface%203%20Background/SquareBGCommonRev1.png",        
-    "moment_date": "APR 28, 2007",         "team_name": "AUS"       },       "element3":
-    {         "player_jersey": 63       },       "element4": {         "score": "Aus
-    281/4(38) v SL 215/8(36)",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs/RisingstarNoLabel.png"      
-    },       "element5": {         "federation_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/ICC%20Logo",        
-    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Australia.png",        
-    "copyright_info": "2021 Faze Technologies Inc.\nAll Rights Reserved.\nOfficially
-    licensed product of International Cricket Council.",         "audio_enable":
-    "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Sreesanth%20Audio.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2JXJWEA7EZ76HYUD/20211029/us-east-2/s3/aws4_request&X-Amz-Date=20211029T070407Z&X-Amz-Expires=604798&X-Amz-SignedHeaders=host&X-Amz-Signature=5cc556695e7b9d3003e8458d56162ee46c3ae4131c0e1d0ad64c9259df9e8f43",        
-    "file_name": "Andrew Common"       }     }   ] }'
-  jsonToShowForSwiping: ' {       "element1": {         "player_name": "Rashid Khan",        
-    "moment_length": "0:21",         "border_color": "#2778DB",         "rarity":
-    "RARE",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/1-Rashid%20-%20Mono.jpg",        
+    "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Cube%20Background/Genesis%20BG.png",        
+    "moment_date": "JUN 2, 2019",         "team_name": "BAN"       },       "element3":
+    {         "player_jersey": 90,         "surfaceFour": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Genesis.png",        
+    "host": "ENGLAND & WALES 2019",         "tournamentStage": "SEMI-FINAL"               
+    },       "element4": {         "score": "BAN 330/6(50.0) v SA 309/8(50.0)",        
+    "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/GameChangersClean.png"      
+    },       "element5": {         "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/Common.png",        
+    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Bangladesh.png",        
+    "copyright_info": "Officially licensed product of the ICC by FanCraze.",        
+    "audio_enable": "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
+    "file_name": "Mustafizur Rahman"       }     },     {       "element1": {        
+    "player_name": "Rashid Khan",         "moment_length": "0:21",         "border_color":
+    "#2778DB",         "rarity": "RARE",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/1-Rashid%20-%20Mono.jpg",        
     "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/1%20-%20Rashid%20Khan%20%281%29.mp4",        
     "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/1-Rashid%20-%20Thumbnail.jpg"      
     },       "element2": {         "action_type": "WICKET",         "image_url":
     "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Cube%20Background/Rare%20BG.png",        
     "moment_date": "JUN 4, 2019",         "team_name": "AFG"       },       "element3":
     {         "player_jersey": 19,         "surfaceFour": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Logo%20-%20Common%2CRare%2CEpic.png",        
-    "tournamentName": "ENGLAND & WALES 2019"       },       "element4": {        
-    "score": "SL 201/10(36.5) v AFG 152/10(32.4)",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/Booster%20PackClean.png"      
+    "host": "ENGLAND & WALES 2019",         "tournamentStage": "SEMI-FINAL"      
+    },       "element4": {         "score": "SL 201/10(36.5) v AFG 152/10(32.4)",        
+    "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/Booster%20PackClean.png"      
     },       "element5": {         "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/Rare.png",        
     "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Afghanistan.png",        
     "copyright_info": "Officially licensed product of the ICC by FanCraze.",        
     "audio_enable": "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
-    "file_name": "Rashid Khan"       }     }'
+    "file_name": "Rashid Khan"       }     },     {       "element1": {         "player_name":
+    "Shaheen Afridi",         "moment_length": "0:21",         "border_color": "#72D016",        
+    "rarity": "EPIC",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/35%20-%20Shaheen%20-%20Mono.jpg",        
+    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/35%20-%20Shaheen%20Afridi%20%281%29.mp4",        
+    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/35%20-%20Shaheen%20-%20THumb.jpg"      
+    },       "element2": {         "action_type": "WICKET",         "image_url":
+    "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Cube%20Background/Common%20BG.png",        
+    "moment_date": "JUN 12, 2019",         "team_name": "PAK"       },       "element3":
+    {         "player_jersey": 40,         "surfaceFour": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Logo%20-%20Common%2CRare%2CEpic.png",        
+    "host": "ENGLAND & WALES 2019",         "tournamentStage": "SEMI-FINAL"      
+    },       "element4": {         "score": "PAK 307/10(49.0) v AUS 266/10(45.4)",        
+    "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/HotShotsClean.png"      
+    },       "element5": {         "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/Epic.png",        
+    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Pakistan.png",        
+    "copyright_info": "Officially licensed product of the ICC by FanCraze.",        
+    "audio_enable": "TRUE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
+    "file_name": "Shaheen Afridi"       }     },     {       "element1": {        
+    "player_name": "Aaron Finch",         "moment_length": "0:21",         "border_color":
+    "#FFD500",         "rarity": "LEGENDARY",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/5-Aaronn%20-%20Mono.jpg",        
+    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/5-Aaron%20Finch%20%281%29.mp4",        
+    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/5-Aaronn%20-%20Thumb.jpg"      
+    },       "element2": {         "action_type": "SIX",         "image_url": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Cube%20Background/Common%20BG.png",        
+    "moment_date": "JUN 12, 2019",         "team_name": "AUS"       },       "element3":
+    {         "player_jersey": 5,         "surfaceFour": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Legendary.png",        
+    "host": "ENGLAND & WALES 2019",         "tournamentStage": "SEMI-FINAL"      
+    },       "element4": {         "score": "PAK 307/10(49.0) v AUS 266/10(45.4)",        
+    "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/Booster%20PackClean.png"      
+    },       "element5": {         "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/Legendary.png",        
+    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Australia.png",        
+    "copyright_info": "Officially licensed product of the ICC by FanCraze.",        
+    "audio_enable": "TRUE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
+    "file_name": "Aaron Finch"       }     },     {       "element1": {         "player_name":
+    "MS Dhoni",         "moment_length": "0:21",         "border_color": "#25AAF7",        
+    "rarity": "PLATINUM",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/21-Dhoni%20-%20Mono.jpg",        
+    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/21-Dhoni%20%281%29.mp4",        
+    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/21-Dhoni%20-%20THumb.jpg"      
+    },       "element2": {         "action_type": "SIX",         "image_url": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Cube%20Background/Legendary%20BG.png",        
+    "moment_date": "JUL 9, 2019",         "team_name": "IND"       },       "element3":
+    {         "player_jersey": 7,         "surfaceFour": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Platinum.png",        
+    "host": "ENGLAND & WALES 2019",         "tournamentStage": "SEMI-FINAL"      
+    },       "element4": {         "score": "NZ 239/8(50.0) v IND 221/10(49.3)",        
+    "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/HotShotsClean.png"      
+    },       "element5": {         "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/Platinum.png",        
+    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/India.png",        
+    "copyright_info": "Officially licensed product of the ICC by FanCraze.",        
+    "audio_enable": "TRUE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
+    "file_name": "MS Dhoni"       }     },     {       "element1": {         "player_name":
+    "Kane Williamson",         "moment_length": "0:21",         "border_color": "#E8EBED",        
+    "rarity": "GENESIS",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/29-Williamson%20-%20Mono.jpg",        
+    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/29%20-%20Kane%20Williamson%20%281%29.mp4",        
+    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/29-Williamson%20-%20Thumb.jpg"      
+    },       "element2": {         "action_type": "SIX",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Cube%20Background/Legendary%20BG.png",        
+    "moment_date": "JUN 19, 2019",         "team_name": "NZ"       },       "element3":
+    {         "player_jersey": 22,         "surfaceFour": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Genesis.png",        
+    "host": "ENGLAND & WALES 2019",         "tournamentStage": "SEMI-FINAL"      
+    },       "element4": {         "score": "SA 241/6(50.0) v NZ 245/6(48.3)",        
+    "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/HotShotsClean.png"      
+    },       "element5": {         "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/Genesis.png",        
+    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/New%20Zealand.png",        
+    "copyright_info": "Officially licensed product of the ICC by FanCraze.",        
+    "audio_enable": "TRUE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
+    "file_name": "Kane Williamson"       }     }   ] }'
+  jsonToShowForSwiping: ' {       "element1": {         "player_name": "Mustafizur
+    Rahman",         "moment_length": "0:21",         "border_color": "#006950",        
+    "rarity": "COMMON",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/13-Mustafizur%20-%20Mono.jpg",        
+    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/13-Mustafizur%20%281%29.mp4",        
+    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/13-Mustafizur%20-%20Thumb.jpg"      
+    },       "element2": {         "action_type": "WICKET",         "image_url":
+    "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Cube%20Background/Genesis%20BG.png",        
+    "moment_date": "JUN 2, 2019",         "team_name": "BAN"       },       "element3":
+    {         "player_jersey": 90,         "surfaceFour": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Genesis.png",        
+    "host": "ENGLAND & WALES 2019",         "tournamentStage": "SEMI-FINAL"               
+    },       "element4": {         "score": "BAN 330/6(50.0) v SA 309/8(50.0)",        
+    "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/GameChangersClean.png"      
+    },       "element5": {         "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/Common.png",        
+    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Bangladesh.png",        
+    "copyright_info": "Officially licensed product of the ICC by FanCraze.",        
+    "audio_enable": "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
+    "file_name": "Mustafizur Rahman"       }     }'
 --- !u!4 &184354164
 Transform:
   m_ObjectHideFlags: 0
@@ -1418,21 +1425,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 299811822464216692, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 299811822464216692, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 299811822464216692, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 299811822930333481, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
       propertyPath: m_ProbeAnchor
@@ -1493,60 +1485,20 @@ PrefabInstance:
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 239170866}
-    - target: {fileID: 2926017025862990955, guid: 48c21979774fa684a8f9018f40f05136,
+    - target: {fileID: 8571763221230307697, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
-      propertyPath: m_text
-      value: ENGLAND & WALES 2019
-      objectReference: {fileID: 0}
-    - target: {fileID: 2926017025862990955, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2926017025862990955, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2926017025862990955, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2926017025862990955, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 3585408236047396519, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5583866626421539439, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.343
-      objectReference: {fileID: 0}
-    - target: {fileID: 6205743732603550803, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6205743732603550803, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_LocalRotation.y
+      propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6205743732603550803, guid: 48c21979774fa684a8f9018f40f05136,
+    - target: {fileID: 8571763221230307697, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
+      propertyPath: m_Color.g
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6284713482500207838, guid: 48c21979774fa684a8f9018f40f05136,
+    - target: {fileID: 8571763221230307697, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
-      propertyPath: m_text
-      value: ENGLAND & WALES 2019
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c21979774fa684a8f9018f40f05136, type: 3}

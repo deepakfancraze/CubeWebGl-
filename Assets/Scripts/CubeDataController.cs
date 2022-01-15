@@ -57,8 +57,10 @@ public class CubeDataController : MonoBehaviour
     [SerializeField] SpriteRenderer surfaceFour_renderer;
     [SerializeField] SpriteRenderer surfaceFourShadow_renderer;
     [SerializeField] SpriteRenderer surfaceFour_renderer_Gradiant;
-    [SerializeField] TextMeshPro tournamentName;
-    [SerializeField] TextMeshPro tournnamentNameShadow;
+    [SerializeField] TextMeshPro hostName;
+    [SerializeField] TextMeshPro hostNameShadow;
+    [SerializeField] TextMeshPro tournamentStage;
+    [SerializeField] TextMeshPro tournamentStageShadow;
 
     [SerializeField] SpriteRenderer assosiationLogoImage_renderer;
     [SerializeField] SpriteRenderer companyLogoImage_renderer;
@@ -67,7 +69,7 @@ public class CubeDataController : MonoBehaviour
 
     static CubeDataController instance;
 
-    int alreadyDownloadedElementCount;
+ public   int alreadyDownloadedElementCount;
 
     public static Action onEverythingLoaded;
     public static int VisualisedIndex => instance.indexToBeVisualised;
@@ -286,8 +288,11 @@ public class CubeDataController : MonoBehaviour
         copyrightText.text = element5.copyright_info;
         filename = element5.file_name;
 
-        tournamentName.text = element3.tournamentName;
-        tournnamentNameShadow.text = element3.tournamentName;
+        hostName.text = element3.host;
+        hostNameShadow.text = element3.host;
+
+        tournamentStage.text = element3.tournamentStage;
+        tournamentStageShadow.text = element3.tournamentStage;
 
         if (momentVideoPlayer != null || momentVideoPlayer)
         {
@@ -426,7 +431,8 @@ public class CubeDataController : MonoBehaviour
     {
         yield return new WaitUntil(() => isSurfaceFourImageDownloaded);
         surfaceFour_renderer_Gradiant.gameObject.SetActive(false);
-        MaterialColourHandler.SetColor(borderColor, rarity, surfaceFour_renderer, surfaceFourShadow_renderer, surfaceFour_renderer_Gradiant, tournamentName, tournnamentNameShadow);
+        MaterialColourHandler.SetColor(borderColor, rarity, surfaceFour_renderer, surfaceFourShadow_renderer,
+         surfaceFour_renderer_Gradiant, hostName, hostNameShadow, tournamentStage, tournamentStageShadow);
         IncreaseElementCountAndCheckIfAllDownloaded();
     }
     void ThumbnailImageArrived(Texture2D texture2D)
@@ -570,15 +576,19 @@ public class Element2
 public class Element3
 {
     //numbered side
+    //numbered side
     public int player_jersey;
     public string surfaceFour;
-    public string tournamentName;
+    public string host;
+    public string tournamentStage;
 
-    public Element3(int player_jersey, string surfaceFour, string tournamentName)
+
+    public Element3(int player_jersey, string surfaceFour, string host, string tournamentStage)
     {
         this.player_jersey = player_jersey;
         this.surfaceFour = surfaceFour;
-        this.tournamentName = tournamentName;
+        this.host = host;
+        this.tournamentStage = tournamentStage;
 
     }
 }
