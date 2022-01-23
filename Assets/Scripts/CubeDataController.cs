@@ -271,11 +271,14 @@ public class CubeDataController : MonoBehaviour
         overs_b_text.text = over2;
 
         string[] tempDate = element2.moment_date.Split(' ');
+        tempDate[0] = tempDate[0].ToUpper();
         string[] number = tempDate[1].Split(',');
-
-        int a = int.Parse(number[0]);
-        if (a < 10)
-            tempDate[1] = "0" + tempDate[1];
+        if (number.Length == 2)
+        {
+            int a = int.Parse(number[0]);
+            if (a < 10)
+                tempDate[1] = "0" + tempDate[1];
+        }
 
         momentDateText.text = tempDate[0] + " " + tempDate[1] + " " + tempDate[2];
         momentLengthText.text = element1.moment_length;

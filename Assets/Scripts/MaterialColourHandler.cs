@@ -100,13 +100,13 @@ public class MaterialColourHandler : MonoBehaviour
                 case CubeRarityType.common:
                     {
                         surface4Logo.color = color;
-                        surface4ShadowRender.color = DarkShadeColor(color);
+                        surface4ShadowRender.color = DarkShadeColor(Color.black);
                         surface4LogoGradiant.gameObject.SetActive(true);
                         hostName.color = color;
-                        hostNameShadow.color = DarkShadeColor(color);
+                        hostNameShadow.color = DarkShadeColor(Color.black);
 
                         tournamentStage.color = color;
-                        tournamentStageShadow.color = DarkShadeColor(color);
+                        tournamentStageShadow.color = DarkShadeColor(Color.black);
                         instance.edgesMaterial.color = color;
                         instance.jerseyBotTextMat.SetColor("_FaceColor", color);
                         instance.jerseyBotTextMat.SetColor("_GlowColor", instance.ChangeBGColorGlow(color));
@@ -118,13 +118,13 @@ public class MaterialColourHandler : MonoBehaviour
                 case CubeRarityType.rare:
                     {
                         surface4Logo.color = color;
-                        surface4ShadowRender.color = DarkShadeColor(color);
+                        surface4ShadowRender.color = DarkShadeColor(Color.black);
                         surface4LogoGradiant.gameObject.SetActive(true);
                         hostName.color = color;
-                        hostNameShadow.color = DarkShadeColor(color);
+                        hostNameShadow.color = DarkShadeColor(Color.black);
 
                         tournamentStage.color = color;
-                        tournamentStageShadow.color = DarkShadeColor(color);
+                        tournamentStageShadow.color = DarkShadeColor(Color.black);
                         instance.edgesMaterial.color = color;
                         instance.rareBorderMat.SetColor("EmissionColor", color);
                         instance.jerseyBotTextMat.SetColor("_FaceColor", color);
@@ -138,13 +138,13 @@ public class MaterialColourHandler : MonoBehaviour
                     {
                         Debug.Log("Set epic colors");
                         surface4Logo.color = color;
-                        surface4ShadowRender.color = DarkShadeColor(color);
+                        surface4ShadowRender.color = DarkShadeColor(Color.black);
                         surface4LogoGradiant.gameObject.SetActive(true);
                         hostName.color = color;
-                        hostNameShadow.color = DarkShadeColor(color);
+                        hostNameShadow.color = DarkShadeColor(Color.black);
 
                         tournamentStage.color = color;
-                        tournamentStageShadow.color = DarkShadeColor(color);
+                        tournamentStageShadow.color = DarkShadeColor(Color.black);
                         instance.edgesMaterial.color = color;
                         instance.epicBorderMat.SetColor("EmissionColor", color);
                         instance.jerseyBotTextMat.SetColor("_FaceColor", color);
@@ -160,12 +160,12 @@ public class MaterialColourHandler : MonoBehaviour
                         hostName.color = instance.legendaryEdgeColor;
 
                         instance.edgesMaterial.color = instance.legendaryEdgeColor;
-                        surface4ShadowRender.color = DarkShadeColor(Color.white);
-                        hostNameShadow.color = DarkShadeColor(instance.legendaryEdgeColor);
+                        surface4ShadowRender.color = DarkShadeColor(Color.black);
+                        hostNameShadow.color = DarkShadeColor(Color.black);
                         surface4Logo.color = Color.white;
 
                         tournamentStage.color = instance.legendaryEdgeColor; ;
-                        tournamentStageShadow.color = DarkShadeColor(instance.legendaryEdgeColor);
+                        tournamentStageShadow.color = DarkShadeColor(Color.black);
                         instance.jerseyBotTextMat.SetColor("_FaceColor", instance.legendaryBGFaceColor);
                         instance.jerseyBotTextMat.SetColor("_GlowColor", instance.legendaryBGGlowColor);
                         instance.jerseyTopTextMat.SetColor("_FaceColor", instance.legendaryFaceColor);
@@ -178,12 +178,12 @@ public class MaterialColourHandler : MonoBehaviour
                         hostName.color = instance.genesisEdgeColor;
 
                         instance.edgesMaterial.color = instance.genesisEdgeColor;
-                        surface4ShadowRender.color = DarkShadeColor(Color.white);
-                        hostNameShadow.color = DarkShadeColor(instance.genesisEdgeColor);
+                        surface4ShadowRender.color = DarkShadeColor(Color.black);
+                        hostNameShadow.color = DarkShadeColor(Color.black);
                         surface4Logo.color = Color.white;
 
                         tournamentStage.color = instance.genesisEdgeColor; ;
-                        tournamentStageShadow.color = DarkShadeColor(instance.genesisEdgeColor);
+                        tournamentStageShadow.color = DarkShadeColor(Color.black);
                         instance.jerseyBotTextMat.SetColor("_FaceColor", instance.genesisBGFaceColor);
                         instance.jerseyBotTextMat.SetColor("_GlowColor", instance.genesisBGGlowColor);
                         instance.jerseyTopTextMat.SetColor("_FaceColor", instance.genesisFaceColor);
@@ -196,12 +196,12 @@ public class MaterialColourHandler : MonoBehaviour
                         Debug.Log("Set plat colors");
                         hostName.color = instance.platinumFaceColor;
                         instance.edgesMaterial.color = instance.platinumFaceColor;
-                        surface4ShadowRender.color = DarkShadeColor(Color.white);
-                        hostNameShadow.color = DarkShadeColor(instance.platinumFaceColor);
+                        surface4ShadowRender.color = DarkShadeColor(Color.black);
+                        hostNameShadow.color = DarkShadeColor(Color.black);
                         surface4Logo.color = Color.white;
 
                         tournamentStage.color = instance.platinumFaceColor; ;
-                        tournamentStageShadow.color = DarkShadeColor(instance.platinumFaceColor);
+                        tournamentStageShadow.color = DarkShadeColor(Color.black);
                         instance.jerseyBotTextMat.SetColor("_FaceColor", instance.platinumFaceBGColor);
                         instance.jerseyBotTextMat.SetColor("_GlowColor", instance.platinumGlowBGColor);
                         instance.jerseyTopTextMat.SetColor("_FaceColor", instance.platinumFaceColor);
