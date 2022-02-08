@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class ImageLoader : MonoBehaviour
 {
@@ -44,7 +45,34 @@ public class ImageLoader : MonoBehaviour
 
     public static void GetTexture2D(Action<Texture2D> action, string url)
     {
-        instance.StartCoroutine(LoadImageCoroutine(action, url));
+        instance.StartCoroutine(GetText(action, url));
+    }
+
+
+
+    static IEnumerator GetText(Action<Texture2D> action, string url)
+    {
+        using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture(url))
+        {
+            yield return uwr.SendWebRequest();
+
+            if (uwr.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(uwr.error);
+            }
+            else
+            {
+                // Get downloaded asset bundle
+                var texture = DownloadHandlerTexture.GetContent(uwr);
+                if (instance.thisRenderer != null)
+                {
+                    instance.thisRenderer.material.color = Color.white;
+                    instance.thisRenderer.material.mainTexture = texture;
+                }
+
+                action?.Invoke(texture);
+            }
+        }
     }
 
 }

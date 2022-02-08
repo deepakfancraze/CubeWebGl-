@@ -365,23 +365,22 @@ MonoBehaviour:
     "copyright_info": "Officially licensed product of the ICC by FanCraze.",        
     "audio_enable": "TRUE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
     "file_name": "Kane Williamson"       }     }   ] }'
-  jsonToShowForSwiping: ' {       "element1": {         "player_name": "Mustafizur
-    Rahman",         "moment_length": "0:21",         "border_color": "#006950",        
-    "rarity": "COMMON",         "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Monochrome%20-%20Demo/13-Mustafizur%20-%20Mono.jpg",        
-    "video_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20Videos%20-%20Demo/13-Mustafizur%20%281%29.mp4",        
-    "video_thumbnail": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Player%20-%20Video%20Thumbnails%20-%20Demo/13-Mustafizur%20-%20Thumb.jpg"      
-    },       "element2": {         "action_type": "WICKET",         "image_url":
-    "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Cube%20Background/Genesis%20BG.png",        
-    "moment_date": "JUN 2, 2019",         "team_name": "BAN"       },       "element3":
-    {         "player_jersey": 90,         "surfaceFour": "http://stage.assets.faze.app.s3-ap-south-1.amazonaws.com/Genesis.png",        
-    "host": "ENGLAND & WALES 2019",         "tournamentStage": "SEMI-FINAL"               
-    },       "element4": {         "score": "BAN 330/6(50.0) v SA 309/8(50.0)",        
-    "image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Packs%20without%20border/GameChangersClean.png"      
-    },       "element5": {         "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/Common.png",        
-    "flag_image_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/Flags/Bangladesh.png",        
-    "copyright_info": "Officially licensed product of the ICC by FanCraze.",        
-    "audio_enable": "FALSE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
-    "file_name": "Mustafizur Rahman"       }     }'
+  jsonToShowForSwiping: '{       "element1": {         "moment_length": "0:21",        
+    "border_color": "#25AAF7",         "rarity": "EPIC",         "image_url": "https://prod-assets-s3.faze.app/moment/msdhoni1/msdhoni1-mono.png",        
+    "video_url": "https://prod-assets-s3.faze.app/moment/msdhoni1/msdhoni1-video-raw.webm",        
+    "video_thumbnail": "https://prod-assets-s3.faze.app/moment/msdhoni1/msdhoni1-thumbnail.png",        
+    "player_name": "MS Dhoni"       },       "element2": {         "action_type":
+    "SIX",         "image_url": "https://prod-assets-s3.faze.app/moment/msdhoni1/msdhoni1-packbg.png",        
+    "moment_date": "JUL 9, 2019",         "team_name": "IND"       },       "element3":
+    {         "player_jersey": 7,         "surfaceFour": "https://prod-assets-s3.faze.app/rarity/EPIC.png",        
+    "host": "ENGLAND & WALES 2019",         "tournamentStage": "SEMI-FINAL"      
+    },       "element4": {         "image_url": "https://prod-assets-s3.faze.app/moment/msdhoni1/msdhoni1-pack.png",        
+    "score": "NZL 239/8(50.0) v IND 221/10(49.3)"       },       "element5": {        
+    "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/EPIC.png",        
+    "flag_image_url": "https://prod-asset.faze.app/original/1643047606966/India%207.png",        
+    "copyright_info": "Officially licensed product of the International Cricket Council
+    (ICC)\n Designed, developed and issued by FanCraze",         "audio_enable":
+    "TRUE",         "file_name": "msdhoni1"       }     }'
 --- !u!4 &184354164
 Transform:
   m_ObjectHideFlags: 0
@@ -1262,7 +1261,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8f8683b3f1497f94da7554fcf696f03a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fb87f3cd291f33e42b391cab5eeb190c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
