@@ -147,6 +147,81 @@ MonoBehaviour:
   sortingLayerName: Default
   orderInLayer: 19
   MyRenderer: {fileID: 1352221377}
+--- !u!1 &2121764405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2121764406}
+  - component: {fileID: 2121764408}
+  - component: {fileID: 2121764407}
+  m_Layer: 5
+  m_Name: LoadingImage (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2121764406
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121764405}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8571763221230307696}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 80}
+  m_SizeDelta: {x: 532.71, y: 420.8641}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2121764408
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121764405}
+  m_CullTransparentMesh: 1
+--- !u!114 &2121764407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121764405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: fb87f3cd291f33e42b391cab5eeb190c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &299811822048144813
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,8 +352,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299811822049487726}
   m_LocalRotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.01700068, y: 0.00962, z: -0.036000073}
-  m_LocalScale: {x: 40.770325, y: 60.72055, z: 40.583946}
+  m_LocalPosition: {x: -0.01700068, y: 0.00962, z: -0.04}
+  m_LocalScale: {x: 40.770325, y: 113.3, z: 40.583946}
   m_Children:
   - {fileID: 299811823058304220}
   m_Father: {fileID: 299811822575058159}
@@ -344,7 +419,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299811822059129135}
   - component: {fileID: 299811822059132625}
-  - component: {fileID: 299811822059132624}
   - component: {fileID: 3321367876601761688}
   m_Layer: 0
   m_Name: Team_A_Score
@@ -413,14 +487,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &299811822059132624
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299811822059129134}
-  m_CullTransparentMesh: 0
 --- !u!114 &3321367876601761688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1097,7 +1163,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299811822355910534}
   - component: {fileID: 299811822355910537}
-  - component: {fileID: 299811822355910536}
   - component: {fileID: 299811822355910535}
   m_Layer: 0
   m_Name: X
@@ -1166,14 +1231,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &299811822355910536
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299811822355910533}
-  m_CullTransparentMesh: 0
 --- !u!114 &299811822355910535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1277,7 +1334,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299811822379485280}
   - component: {fileID: 299811822379485282}
-  - component: {fileID: 299811822379485281}
   - component: {fileID: 299811822386964108}
   m_Layer: 0
   m_Name: Overs_A
@@ -1346,14 +1402,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &299811822379485281
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299811822379485311}
-  m_CullTransparentMesh: 0
 --- !u!114 &299811822386964108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1506,8 +1554,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299811822481741333}
   m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
-  m_LocalPosition: {x: -0, y: 0, z: 0.004}
-  m_LocalScale: {x: 1, y: 1, z: 0.01}
+  m_LocalPosition: {x: 0.000426, y: 0.000025, z: 0.00132}
+  m_LocalScale: {x: 1.0022451, y: 1.0019339, z: 0.004638512}
   m_Children:
   - {fileID: 299811823589201603}
   m_Father: {fileID: 299811823263474850}
@@ -1592,14 +1640,14 @@ VideoPlayer:
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
   m_RenderMode: 2
-  m_AspectRatio: 2
+  m_AspectRatio: 1
   m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 01
@@ -1862,8 +1910,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299811822532622036}
   m_LocalRotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.0167, y: 0.01337, z: -0.051}
-  m_LocalScale: {x: 41.2024, y: 6.6223207, z: 40.97528}
+  m_LocalPosition: {x: -0.016938, y: 0.009739, z: -0.051}
+  m_LocalScale: {x: 40.7669, y: 6.6223207, z: 40.57753}
   m_Children:
   - {fileID: 299811823088212697}
   m_Father: {fileID: 299811822575058159}
@@ -1929,7 +1977,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299811822544623540}
   - component: {fileID: 299811822544623542}
-  - component: {fileID: 299811822544623541}
   - component: {fileID: 299811823330534772}
   m_Layer: 0
   m_Name: Overs_B
@@ -1998,14 +2045,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &299811822544623541
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299811822544623539}
-  m_CullTransparentMesh: 0
 --- !u!114 &299811823330534772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2186,7 +2225,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299811822697497312}
   - component: {fileID: 299811822697497314}
-  - component: {fileID: 299811822697497313}
   - component: {fileID: 299811822126173478}
   m_Layer: 0
   m_Name: TeamNameText
@@ -2255,14 +2293,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &299811822697497313
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299811822697497343}
-  m_CullTransparentMesh: 0
 --- !u!114 &299811822126173478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2366,7 +2396,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299811822706566266}
   - component: {fileID: 299811822706566268}
-  - component: {fileID: 299811822706566267}
   - component: {fileID: 299811823362816619}
   m_Layer: 0
   m_Name: ActionTypeText
@@ -2435,14 +2464,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &299811822706566267
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299811822706566265}
-  m_CullTransparentMesh: 0
 --- !u!114 &299811823362816619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2546,7 +2567,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299811822900932005}
   - component: {fileID: 299811822900932007}
-  - component: {fileID: 299811822900932006}
   - component: {fileID: 2237985056367872619}
   m_Layer: 0
   m_Name: Team_B_Score
@@ -2615,14 +2635,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &299811822900932006
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299811822900932004}
-  m_CullTransparentMesh: 0
 --- !u!114 &2237985056367872619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2825,7 +2837,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299811822929820137}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.007354}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00835}
   m_LocalScale: {x: 0.019971998, y: 0.019962853, z: 0.020267129}
   m_Children: []
   m_Father: {fileID: 299811823313396165}
@@ -2833,7 +2845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.002482, y: 0}
+  m_AnchoredPosition: {x: -0.00321, y: 0}
   m_SizeDelta: {x: 0.508547, y: 0.118343}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &299811822929820140
@@ -3989,7 +4001,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299811823239513139}
   - component: {fileID: 299811823239513141}
-  - component: {fileID: 299811823239513140}
   - component: {fileID: 2763128625513829919}
   m_Layer: 0
   m_Name: Team_B_Name
@@ -4058,14 +4069,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &299811823239513140
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299811823239513138}
-  m_CullTransparentMesh: 0
 --- !u!114 &2763128625513829919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4437,7 +4440,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299811823281431729}
   - component: {fileID: 299811823281431731}
-  - component: {fileID: 299811823281431730}
   - component: {fileID: 8611131723983570037}
   m_Layer: 0
   m_Name: Team_A_Name
@@ -4506,14 +4508,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &299811823281431730
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299811823281431728}
-  m_CullTransparentMesh: 0
 --- !u!114 &8611131723983570037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5231,7 +5225,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299811823480881641}
   - component: {fileID: 299811823480881643}
-  - component: {fileID: 299811823480881642}
   - component: {fileID: 299811823843658727}
   m_Layer: 0
   m_Name: DateText
@@ -5300,14 +5293,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &299811823480881642
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299811823480881640}
-  m_CullTransparentMesh: 0
 --- !u!114 &299811823843658727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5912,8 +5897,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299811823670921022}
   m_LocalRotation: {x: -0, y: 0.7071067, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0.00032, y: 0.00267, z: 0.02}
-  m_LocalScale: {x: 45.367985, y: 49.34099, z: 45.38402}
+  m_LocalPosition: {x: 0.000366, y: 0.00162, z: 0.02144}
+  m_LocalScale: {x: 45.455994, y: 31.768688, z: 45.28826}
   m_Children: []
   m_Father: {fileID: 299811823263474850}
   m_RootOrder: 3
@@ -6132,6 +6117,7 @@ MonoBehaviour:
   companyLogoImage_renderer: {fileID: 0}
   copyrightText: {fileID: 299811823973793685}
   interactable: 1
+  alreadyDownloadedElementCount: 0
 --- !u!1 &299811823746480106
 GameObject:
   m_ObjectHideFlags: 0
@@ -6255,8 +6241,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299811823789977682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0005962946, y: 0, z: -0.0022181666}
-  m_LocalScale: {x: 1.0000916, y: 1.0004845, z: 1.1087011}
+  m_LocalPosition: {x: 0.0003733, y: -0.0000129, z: -0.0022181666}
+  m_LocalScale: {x: 1.0023445, y: 1.0020796, z: 1.1087011}
   m_Children: []
   m_Father: {fileID: 299811823263474850}
   m_RootOrder: 4
@@ -6878,7 +6864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0007, y: -0}
+  m_AnchoredPosition: {x: -0.00003, y: -0}
   m_SizeDelta: {x: 0.774996, y: 0.9041914}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &299811824068084914
@@ -7165,7 +7151,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5583866626421539439}
   - component: {fileID: 797927346765934882}
-  - component: {fileID: 2223321011722480544}
   - component: {fileID: 2926017025862990955}
   m_Layer: 0
   m_Name: HostNameShadow
@@ -7190,8 +7175,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.012, y: -0.231}
-  m_SizeDelta: {x: 0.69969, y: 0.09901}
+  m_AnchoredPosition: {x: 0.01252, y: -0.231}
+  m_SizeDelta: {x: 0.89349, y: 0.09901}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &797927346765934882
 MeshRenderer:
@@ -7234,14 +7219,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &2223321011722480544
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3585408236047396519}
-  m_CullTransparentMesh: 0
 --- !u!114 &2926017025862990955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7427,7 +7404,6 @@ GameObject:
   m_Component:
   - component: {fileID: 313666498425394929}
   - component: {fileID: 1140939828660447269}
-  - component: {fileID: 8906547709565192687}
   - component: {fileID: 6284713482500207838}
   m_Layer: 0
   m_Name: HostName
@@ -7453,7 +7429,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.01014, y: -0.22}
-  m_SizeDelta: {x: 0.7053, y: 0.10381}
+  m_SizeDelta: {x: 0.90065, y: 0.10381}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1140939828660447269
 MeshRenderer:
@@ -7496,14 +7472,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &8906547709565192687
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5129049404260507171}
-  m_CullTransparentMesh: 0
 --- !u!114 &6284713482500207838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7795,7 +7763,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5736454685084205531}
   - component: {fileID: 7906248677318929645}
-  - component: {fileID: 9056097551578702282}
   - component: {fileID: 4983371276264679881}
   m_Layer: 0
   m_Name: TournamentStageShadow
@@ -7820,8 +7787,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0155, y: -0.332}
-  m_SizeDelta: {x: 0.69969, y: 0.09901}
+  m_AnchoredPosition: {x: 0.013, y: -0.33}
+  m_SizeDelta: {x: 0.88035, y: 0.09901}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &7906248677318929645
 MeshRenderer:
@@ -7864,14 +7831,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &9056097551578702282
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6630983010679127383}
-  m_CullTransparentMesh: 0
 --- !u!114 &4983371276264679881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7975,7 +7934,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6025828507090783444}
   - component: {fileID: 1991027377205196012}
-  - component: {fileID: 1715756811416395451}
   - component: {fileID: 6250649984805161188}
   m_Layer: 0
   m_Name: TournamentStage
@@ -8000,8 +7958,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0155, y: -0.321}
-  m_SizeDelta: {x: 0.7053, y: 0.10381}
+  m_AnchoredPosition: {x: 0.013, y: -0.319}
+  m_SizeDelta: {x: 0.88741, y: 0.10381}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1991027377205196012
 MeshRenderer:
@@ -8044,14 +8002,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &1715756811416395451
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7197951451045372256}
-  m_CullTransparentMesh: 0
 --- !u!114 &6250649984805161188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8324,17 +8274,17 @@ PrefabInstance:
     - target: {fileID: 8276525947608819914, guid: 8abb3dfc50f30ba41b46f53d80d469b8,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.11764706
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8276525947608819914, guid: 8abb3dfc50f30ba41b46f53d80d469b8,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.11764706
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8276525947608819914, guid: 8abb3dfc50f30ba41b46f53d80d469b8,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.11764706
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8276525947608819915, guid: 8abb3dfc50f30ba41b46f53d80d469b8,
         type: 3}
@@ -8491,6 +8441,12 @@ PrefabInstance:
 --- !u!224 &8571763221792911594 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8276525948121076049, guid: 8abb3dfc50f30ba41b46f53d80d469b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 299811822401626555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &8571763221230307696 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8276525947608819915, guid: 8abb3dfc50f30ba41b46f53d80d469b8,
     type: 3}
   m_PrefabInstance: {fileID: 299811822401626555}
   m_PrefabAsset: {fileID: 0}

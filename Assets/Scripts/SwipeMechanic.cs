@@ -26,7 +26,7 @@ public class SwipeMechanic : MonoBehaviour
     {
         if (rotateToScreen)
         {
-            Debug.Log("Rotate To Screen");
+            //Debug.Log("Rotate To Screen");
             RotateToScreen(rotateRight);
             if (cube.eulerAngles.y % 90 < 5)
             {
@@ -35,7 +35,7 @@ public class SwipeMechanic : MonoBehaviour
                 if (cube.eulerAngles.y > 0 && cube.eulerAngles.y < 10)
                 {
                     ResumeVideo();
-                    Debug.Log("Cube Rotation value _________" + cube.localEulerAngles.y);
+                    //Debug.Log("Cube Rotation value _________" + cube.localEulerAngles.y);
                 }
             }
         }
@@ -62,12 +62,12 @@ public class SwipeMechanic : MonoBehaviour
             }
             else if (Input.GetMouseButtonUp(0))
             {
-                Debug.Log("Button Up");
+                //Debug.Log("Button Up");
                 lerp = new Vector3(0, 0, 0);
                 cubeLastAngles = cube.eulerAngles;
                 lerp_target = new Vector3(0, cubeLastAngles.y % 90, 0);
                 rotateRight = lerp_target.y > 45 ? true : false;
-                Debug.Log("Off by angle: " + lerp_target);
+                //Debug.Log("Off by angle: " + lerp_target);
                 rotateToScreen = true;
             }
         }
@@ -78,14 +78,14 @@ public class SwipeMechanic : MonoBehaviour
     {
         if (rotateRight)
         {   //rotate forward -
-            Debug.Log("Rotatig forward");
+            //Debug.Log("Rotatig forward");
             lerp = Vector3.Lerp(lerp, lerp_target, Time.deltaTime * lerpFactor);
             cube.eulerAngles = cube.eulerAngles + lerp;
         }
         else
         {
             //rotate back +
-            Debug.Log("Rotatig backwards");
+            //Debug.Log("Rotatig backwards");
             lerp = Vector3.Lerp(lerp, lerp_target, Time.deltaTime * lerpFactor);
             cube.eulerAngles = cube.eulerAngles - lerp;
         }
@@ -93,7 +93,7 @@ public class SwipeMechanic : MonoBehaviour
 
     public void PauseVideo()
     {
-        Debug.LogWarning("video pause");
+        //Debug.LogWarning("video pause");
         if (videoPause != null)
         {
             videoPause();
@@ -102,7 +102,7 @@ public class SwipeMechanic : MonoBehaviour
 
     public void ResumeVideo()
     {
-        Debug.LogWarning("video pause");
+        //Debug.LogWarning("video pause");
         if (videoPlay != null)
         {
             videoPlay();

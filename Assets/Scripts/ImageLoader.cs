@@ -26,22 +26,22 @@ public class ImageLoader : MonoBehaviour
 
     }
 
-    static IEnumerator LoadImageCoroutine(Action<Texture2D> action, string url)
-    {
-        Debug.Log("Loading.....");
-        WWW wwwLoader = new WWW(url);
-        yield return wwwLoader;
-        Debug.Log("Loaded");
+    //static IEnumerator LoadImageCoroutine(Action<Texture2D> action, string url)
+    //{
+    //    Debug.Log("Loading.....");
+    //    WWW wwwLoader = new WWW(url);
+    //    yield return wwwLoader;
+    //    Debug.Log("Loaded");
 
-        if (instance.thisRenderer != null)
-        {
-            instance.thisRenderer.material.color = Color.white;
-            instance.thisRenderer.material.mainTexture = wwwLoader.texture;
-        }
+    //    if (instance.thisRenderer != null)
+    //    {
+    //        instance.thisRenderer.material.color = Color.white;
+    //        instance.thisRenderer.material.mainTexture = wwwLoader.texture;
+    //    }
 
-        action?.Invoke(wwwLoader.texture);
+    //    action?.Invoke(wwwLoader.texture);
 
-    }
+    //}
 
     public static void GetTexture2D(Action<Texture2D> action, string url)
     {
@@ -69,7 +69,6 @@ public class ImageLoader : MonoBehaviour
                     instance.thisRenderer.material.color = Color.white;
                     instance.thisRenderer.material.mainTexture = texture;
                 }
-
                 action?.Invoke(texture);
             }
         }
