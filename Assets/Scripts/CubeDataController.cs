@@ -6,7 +6,7 @@ using System;
 using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
-
+using UnityEngine.UI;
 
 public class CubeDataController : MonoBehaviour
 {
@@ -66,7 +66,7 @@ public class CubeDataController : MonoBehaviour
     [SerializeField] SpriteRenderer companyLogoImage_renderer;
     [SerializeField] TextMeshPro copyrightText;
     [SerializeField] bool interactable;
-
+    [SerializeField] Text txtTesting;
     static CubeDataController instance;
 
  public   int alreadyDownloadedElementCount;
@@ -474,13 +474,18 @@ public class CubeDataController : MonoBehaviour
     void IncreaseElementCountAndCheckIfAllDownloaded()
     {
         alreadyDownloadedElementCount += 1;
-
+        Debug.LogError("______ Download counter ______" + alreadyDownloadedElementCount);
         if (alreadyDownloadedElementCount == 5)
         //if (alreadyDownloadedElementCount == 3)
         {
             //setDefaultAnimationBeforeStart?.Invoke();
             onEverythingLoaded?.Invoke();
+            txtTesting.text = "all loaded";
             alreadyDownloadedElementCount = 0;
+        }
+        else
+        {
+            txtTesting.text = alreadyDownloadedElementCount.ToString();
         }
     }
 
