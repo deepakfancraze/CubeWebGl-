@@ -15,10 +15,10 @@ public class ImageLoader : MonoBehaviour
     {
         instance = this;
 
-        GetTexture2D(Done, url);
+        //GetTexture2D(Done, url);
 
-        if (thisRenderer != null)
-            thisRenderer.material.color = Color.red;
+        //if (thisRenderer != null)
+        //    thisRenderer.material.color = Color.red;
     }
 
     void Done(Texture2D texture2D)
@@ -52,7 +52,7 @@ public class ImageLoader : MonoBehaviour
 
     static IEnumerator GetText(Action<Texture2D> action, string url)
     {
-        using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture(url))
+        using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture(url,true))
         {
             yield return uwr.SendWebRequest();
 
@@ -64,11 +64,11 @@ public class ImageLoader : MonoBehaviour
             {
                 // Get downloaded asset bundle
                 var texture = DownloadHandlerTexture.GetContent(uwr);
-                if (instance.thisRenderer != null)
-                {
-                    instance.thisRenderer.material.color = Color.white;
-                    instance.thisRenderer.material.mainTexture = texture;
-                }
+                //if (instance.thisRenderer != null)
+                //{
+                //    instance.thisRenderer.material.color = Color.white;
+                //    instance.thisRenderer.material.mainTexture = texture;
+                //}
                 action?.Invoke(texture);
             }
         }
