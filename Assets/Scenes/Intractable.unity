@@ -1547,6 +1547,31 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 1284.2261
       objectReference: {fileID: 0}
+    - target: {fileID: 8571763221792911604, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571763221792911604, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571763221792911604, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571763221792911604, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571763221792911606, guid: 48c21979774fa684a8f9018f40f05136,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 299811822172230805, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
     - {fileID: 299811824068084913, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
