@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 public class MaterialColourHandler : MonoBehaviour
 {
@@ -87,7 +88,7 @@ public class MaterialColourHandler : MonoBehaviour
 
         return Color.HSVToRGB(h, s, v);
     }
-    public static void SetColor(string borderColor, CubeRarityType rarity, SpriteRenderer surface4Logo, SpriteRenderer surface4ShadowRender, SpriteRenderer surface4LogoGradiant
+    public static void SetColor(string borderColor, CubeRarityType rarity, Image surface4Logo, SpriteRenderer surface4ShadowRender, GameObject surface4LogoGradiant
         , TextMeshPro hostName, TextMeshPro hostNameShadow, TextMeshPro tournamentStage, TextMeshPro tournamentStageShadow)
     {
         if (ColorUtility.TryParseHtmlString(borderColor, out Color color))

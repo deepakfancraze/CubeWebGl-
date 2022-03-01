@@ -55,8 +55,9 @@ public class CubeDataController : MonoBehaviour
     [SerializeField] MeshRenderer videoThumbnail;
     [SerializeField] SpriteRenderer teamLogoImage_renderer;
     [SerializeField] SpriteRenderer surfaceFour_renderer;
+    [SerializeField] Image surfaceFour_Image;
     [SerializeField] SpriteRenderer surfaceFourShadow_renderer;
-    [SerializeField] SpriteRenderer surfaceFour_renderer_Gradiant;
+    [SerializeField] Image surfaceFour_renderer_Gradiant;
     [SerializeField] TextMeshPro hostName;
     [SerializeField] TextMeshPro hostNameShadow;
     [SerializeField] TextMeshPro tournamentStage;
@@ -424,7 +425,7 @@ public class CubeDataController : MonoBehaviour
      void surfaceFourImageArrived(Texture2D texture2D)
     {
         // surfaceFour_renderer.sprite = texture2D;
-        surfaceFour_renderer.sprite = Sprite.Create(texture2D, new Rect(0, 0, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f));
+        surfaceFour_Image.sprite = Sprite.Create(texture2D, new Rect(0, 0, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f));
         surfaceFourShadow_renderer.sprite = Sprite.Create(texture2D, new Rect(0, 0, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f));
         isSurfaceFourImageDownloaded = true;
         //IncreaseElementCountAndCheckIfAllDownloaded();
@@ -434,8 +435,8 @@ public class CubeDataController : MonoBehaviour
     {
         yield return new WaitUntil(() => isSurfaceFourImageDownloaded);
         surfaceFour_renderer_Gradiant.gameObject.SetActive(false);
-        MaterialColourHandler.SetColor(borderColor, rarity, surfaceFour_renderer, surfaceFourShadow_renderer,
-         surfaceFour_renderer_Gradiant, hostName, hostNameShadow, tournamentStage, tournamentStageShadow);
+        MaterialColourHandler.SetColor(borderColor, rarity, surfaceFour_Image, surfaceFourShadow_renderer,
+         surfaceFour_renderer_Gradiant.gameObject, hostName, hostNameShadow, tournamentStage, tournamentStageShadow);
         IncreaseElementCountAndCheckIfAllDownloaded();
     }
     void ThumbnailImageArrived(Texture2D texture2D)

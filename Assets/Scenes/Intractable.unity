@@ -366,21 +366,21 @@ MonoBehaviour:
     "audio_enable": "TRUE",         "audio_url": "http://prod.asset.faze.app.s3-us-east-2.amazonaws.com/meek-mill-type-beat-victorious_8596916.mp3",        
     "file_name": "Kane Williamson"       }     }   ] }'
   jsonToShowForSwiping: '{       "element1": {         "moment_length": "0:21",        
-    "border_color": "#25AAF7",         "rarity": "EPIC",         "image_url": "https://prod-assets-s3.faze.app/moment/msdhoni1/msdhoni1-mono.png",        
+    "border_color": "#04F404",         "rarity": "COMMON",         "image_url": "https://d3kwa22uej3blq.cloudfront.net/moment/mohammadrizwan1/mohammadrizwan1-mono.png",        
     "video_url": "https://prod-assets-s3.faze.app/moment/msdhoni1/msdhoni1-video-raw.webm",        
-    "video_thumbnail": "https://prod-assets-s3.faze.app/moment/msdhoni1/msdhoni1-thumbnail.png",        
-    "player_name": "MS Dhoni"       },       "element2": {         "action_type":
-    "SIX",         "image_url": "https://prod-assets-s3.faze.app/moment/msdhoni1/msdhoni1-packbg.png",        
-    "moment_date": "JUL 9, 2019",         "team_name": "IND"       },       "element3":
-    {         "player_jersey": 7,         "surfaceFour": "https://prod-assets-s3.faze.app/rarity/EPIC.png",        
-    "host": "ENGLAND & WALES 2019",         "tournamentStage": "SEMI-FINAL"      
-    },       "element4": {         "image_url": "https://prod-assets-s3.faze.app/moment/msdhoni1/msdhoni1-pack.png",        
-    "score": "NZL 239/8(50.0) v IND 221/10(49.3)"       },       "element5": {        
-    "federation_image_url": "https://s3.ap-south-1.amazonaws.com/dev.assets.faze.app/crictos/EPIC.png",        
-    "flag_image_url": "https://prod-asset.faze.app/original/1643047606966/India%207.png",        
+    "video_thumbnail": "https://d3kwa22uej3blq.cloudfront.net/moment/mohammadrizwan1/mohammadrizwan1-thumbnail.png",        
+    "player_name": "Mohammad Rizwan"       },       "element2": {         "action_type":
+    "SIX",         "image_url": "https://d3kwa22uej3blq.cloudfront.net/moment/mohammadrizwan1/mohammadrizwan1-packbg.png",        
+    "moment_date": "NOV 11, 2021",         "team_name": "PAK"       },       "element3":
+    {         "player_jersey": 16,         "surfaceFour": "https://prod-assets-s3.faze.app/tournamentlogo/ICCMENST20WC/COMMON.png",        
+    "host": "2021",         "tournamentStage": "SEMI-FINAL"       },       "element4":
+    {         "image_url": "https://d3kwa22uej3blq.cloudfront.net/moment/mohammadrizwan1/mohammadrizwan1-pack.png",        
+    "score": "PAK 176/4(20.0) v AUS 177/5(19.0)"       },       "element5": {        
+    "federation_image_url": "https://prod-assets-s3.faze.app/crictos/COMMON.png",        
+    "flag_image_url": "https://prod-asset.faze.app/original/1643047667142/Pakistan%204.png",        
     "copyright_info": "Officially licensed product of the International Cricket Council
     (ICC)\n Designed, developed and issued by FanCraze",         "audio_enable":
-    "TRUE",         "file_name": "msdhoni1"       }     }'
+    "TRUE",         "file_name": "mohammadrizwan1"       }     }'
 --- !u!4 &184354164
 Transform:
   m_ObjectHideFlags: 0
@@ -406,12 +406,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 403658352, guid: 7705a25b88cf67d4da8d67d3bc0f175c,
     type: 3}
   m_PrefabInstance: {fileID: 5777761739314484051}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &430273872 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8571763221230307696, guid: 48c21979774fa684a8f9018f40f05136,
-    type: 3}
-  m_PrefabInstance: {fileID: 299811823237015248}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &492465652
 GameObject:
@@ -645,85 +639,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ebea5c1168f44147a65a15020181419, type: 3}
---- !u!1 &1023393327
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1023393328}
-  - component: {fileID: 1023393330}
-  - component: {fileID: 1023393329}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1023393328
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023393327}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 430273872}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 27.47278}
-  m_SizeDelta: {x: 523.7773, y: 153.1538}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1023393329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023393327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Loading>>>>
---- !u!222 &1023393330
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023393327}
-  m_CullTransparentMesh: 1
 --- !u!1 &1232688998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,14 +1284,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 242682522, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2121764405, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 299811822289346178, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
       propertyPath: lightobject.Array.data[0]
@@ -1502,11 +1409,6 @@ PrefabInstance:
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 239170866}
-    - target: {fileID: 299811823700643418, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: txtTesting
-      value: 
-      objectReference: {fileID: 1023393329}
     - target: {fileID: 299811823789977685, guid: 48c21979774fa684a8f9018f40f05136,
         type: 3}
       propertyPath: m_ProbeAnchor
@@ -1517,65 +1419,7 @@ PrefabInstance:
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 239170866}
-    - target: {fileID: 8571763221230307696, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571763221230307696, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571763221230307696, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571763221230307696, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571763221230307696, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 2198.1936
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571763221230307696, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1284.2261
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571763221792911604, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571763221792911604, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_MatchWidthOrHeight
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571763221792911604, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571763221792911604, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571763221792911606, guid: 48c21979774fa684a8f9018f40f05136,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 299811822172230805, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
-    - {fileID: 299811824068084913, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
-    - {fileID: 299811822929820139, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c21979774fa684a8f9018f40f05136, type: 3}
 --- !u!1 &1443509607003478110 stripped
 GameObject:
